@@ -1,0 +1,45 @@
+
+.dark_bg{
+    background-color: rgb(28, 29, 37);
+    color: white;
+    --card-bg:linear-gradient(121deg, rgb(57, 57, 59) 0%, rgb(16, 38, 44) 8%, rgb(20, 45, 71) 65%, rgb(2, 61, 87) 100%);
+    transition: 1s ease-out;
+  
+  }
+  .light_bg{
+    background-color: rgb(217, 235, 235);
+    color: rgb(0, 0, 0);
+    --card-bg:linear-gradient(121deg, rgb(200, 200, 231) 0%, rgb(181, 221, 233) 8%, rgb(167, 191, 216) 65%, rgb(135, 148, 153) 100%);
+    transition: 1s ease-out;
+  }
+
+  li{
+    margin: 10px;
+    }
+    .dark{
+    background-color: rgb(27, 27, 24);
+    padding: 2px 5px 5px 5px ;
+    border-radius: 50%;
+    transition: 1s ease-in-out ;
+    }
+    .light{
+    background-color: rgb(248, 255, 255);
+    padding: 2px 5px 5px 5px ;
+    border-radius: 50%;
+    transition: 1s ease-in-out ;
+    }
+    .btn_true{
+    color: gold;
+
+    }
+    .btn_false{
+    color: rgb(25, 25, 58);
+
+    }
+  .nav{
+  background:var(--card-bg) ;
+  }
+  .header{
+    background:var(--card-bg) ;
+
+  }
