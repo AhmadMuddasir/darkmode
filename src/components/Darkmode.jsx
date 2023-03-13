@@ -9,7 +9,7 @@ const Darkmode = () => {
     const [bool,setBool] = useState(false);
 
 
-    const toggleTheme = ()=>{
+    const changeTheme = ()=>{
         if(theme == "dark_bg"){
             setTheme("light_bg");
             setBool(false);
@@ -22,12 +22,12 @@ const Darkmode = () => {
         document.body.className = theme;
     },[theme])
 
-    const buttonClass = bool ? 'dark' : 'light';
+    const btnClass = bool ? 'dark' : 'light';
     const divclass = bool ? "btn_true": "btn_false"
 
   return (
     <>
-    <nav className='nav flex  p-2 bg-blue-200 justify-around
+    <nav className='nav flex  p-2  justify-around
     items-center font-semibold text-lg m-2 rounded-sm'>
         <div>   
             <p>logo</p>
@@ -39,7 +39,7 @@ const Darkmode = () => {
             <li>Login</li>
         </ul>
         <div className={divclass} >
-            <button className={buttonClass} onClick = {toggleTheme}>
+            <button className={btnClass} onClick = {changeTheme}>
             {bool ? <LightModeIcon/> : <NightsStayIcon/>}</button>
         </div>
     </nav>
