@@ -8,7 +8,7 @@ const Darkmode = () => {
     const [theme,setTheme] = useState("light_bg");
     const [bool,setBool] = useState(false);
 
-
+//toggle button
     const toggleTheme = ()=>{
         if(theme == "dark_bg"){
             setTheme("light_bg");
