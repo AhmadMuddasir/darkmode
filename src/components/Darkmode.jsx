@@ -5,6 +5,7 @@ import NightsStayIcon from '@mui/icons-material/NightsStay';
 
 
 const Darkmode = () => {
+    //changes state of the class
     const [theme,setTheme] = useState("light_bg");
     const [bool,setBool] = useState(false);
 
@@ -21,7 +22,7 @@ const Darkmode = () => {
     useEffect(()=>{
         document.body.className = theme;
     },[theme])
-
+    //if true enable dark mode else light mode
     const buttonClass = bool ? 'dark' : 'light';
     const divclass = bool ? "btn_true": "btn_false"
 
